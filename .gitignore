@@ -1,8 +1,11 @@
-/*/*.pdf
-/*/*.html
-!/*/index.html
-/*/*/*.html
-!/*/*/index.html
-/*/*/*.pdf
-/*/*/images
+# Ignore all HTML files
 *.html
+
+# But do not ignore index.html files in any directory
+!index.html
+
+# Ignore PDF files in top-level and subdirectories
+*.pdf
+
+# Ignore images directories at second-level
+/*/*/images
