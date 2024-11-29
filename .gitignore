@@ -1,6 +1,8 @@
 /*/*.pdf
 /*/*.html
+!/*/index.html
 /*/*/*.html
+!/*/*/index.html
 /*/*/*.pdf
 /*/*/images
 *.html
