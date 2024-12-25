@@ -1,8 +1,3 @@
-# Ignore all HTML files
-*.html
-
-# But do not ignore index.html files in any directory
-!index.html
 
 # Ignore PDF files in top-level and subdirectories
 *.pdf
