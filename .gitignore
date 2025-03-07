@@ -4,3 +4,4 @@
 
 # Ignore images directories at second-level
 /*/*/images
+*.class
