@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<title>Diffie-Hellman Key Exchange</title>
+</head>
+
+<body>
+    <h2>Diffie-Hellman Key Exchange</h2>
+    <button onclick="generateKeys()">Exchange Keys</button>
+    <p id="aliceKeys"></p>
+    <p id="bobKeys"></p>
+    <p id="sharedKey"></p>
+
+    <script>
+        function generateKeys() {
+            // Step 1: Publicly agreed values (Prime Number 'p' & Base 'g')
+            const p = 23;  // Prime number
+            const g = 5;   // Primitive root mod p
+
+            // Step 2: Alice's Private Key (random)
+            const alicePrivate = Math.floor(Math.random() * 10) + 1;
+            const alicePublic = Math.pow(g, alicePrivate) % p; // Compute Alice's Public Key
+
+            // Step 3: Bob's Private Key (random)
+            const bobPrivate = Math.floor(Math.random() * 10) + 1;
+            const bobPublic = Math.pow(g, bobPrivate) % p; // Compute Bob's Public Key
+
+            // Step 4: Compute Shared Secret Key
+            const aliceSharedKey = Math.pow(bobPublic, alicePrivate) % p;
+            const bobSharedKey = Math.pow(alicePublic, bobPrivate) % p;
+            
+            // Display the results
+            document.getElementById("aliceKeys").innerHTML =
+                `Alice's Private Key: ${alicePrivate} <br> Alice's Public Key: ${alicePublic}`;
+            document.getElementById("bobKeys").innerHTML =
+                `Bob's Private Key: ${bobPrivate} <br> Bob's Public Key: ${bobPublic}`;
+            document.getElementById("sharedKey").innerHTML =
+                `Shared Secret Key (Alice's side): ${aliceSharedKey} <br> Shared Secret Key (Bob's side): ${bobSharedKey}`;
+
+            // Verify if both shared keys match
+            if (aliceSharedKey === bobSharedKey) {
+                document.getElementById("sharedKey").innerHTML += "<br><b>Key Exchange Successful!</b>";
+            } else {
+                document.getElementById("sharedKey").innerHTML += "<br><b>Key Mismatch! Something went wrong.</b>";
+            }
+        }
+    </script>
+</body>
+
+</html>

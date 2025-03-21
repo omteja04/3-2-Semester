@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <string.h>
 int main() {
-  char *str = "Hello World";
-  printf("Original String: %s\n", str);
-  printf("XOR with 0 result: ");
-  for (int i = 0;str[i] != '\0'; i++) {
-    char result = str[i] ^ 0;
-    printf("%c", result);
+  char str[] = "Hello World";
+  char str1[11];
+  int i, len;
+  len = strlen(str);
+  for (i = 0; i < len; i++) {
+    str1[i] = str[i] ^ 0;
+    printf("%c", str1[i]);
   }
   printf("\n");
   return 0;

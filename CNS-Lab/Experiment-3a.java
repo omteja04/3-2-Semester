@@ -1,40 +1,47 @@
+
 import java.util.Scanner;
 
 class CaesarCipher {
-    public static String encrypt(String text, int shift) {
+    // Encrypt method
+    public static String encrypt(String text, int k) {
         StringBuilder result = new StringBuilder();
-        shift %= 26;
-        for (Character ch : text.toCharArray()) {
-            if (Character.isLetter(ch)) {
-                char base = Character.isUpperCase(ch) ? 'A' : 'a';
-                result.append((char) ((ch - base + shift) % 26 + base));
+        k = k % 26; // Ensure shift is within 0-25
+
+        for (char c : text.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                char encryptedChar = (char) ('A' + (c - 'A' + k) % 26);
+                result.append(encryptedChar);
+            } else if (Character.isLowerCase(c)) {
+                char encryptedChar = (char) ('a' + (c - 'a' + k) % 26);
+                result.append(encryptedChar);
             } else {
-                result.append(ch);
+                result.append(c); // Leave non-alphabetic characters unchanged
             }
         }
         return result.toString();
     }
 
-    public static String decrypt(String text, int shift) {
-        return encrypt(text, 26 - shift % 26);
+    // Decrypt method
+    public static String decrypt(String text, int k) {
+        return encrypt(text, 26 - (k % 26));
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the text: ");
-        String text = sc.nextLine();
+        // Taking input from the user
+        System.out.print("Enter text: ");
+        String text = scanner.nextLine();
 
-        System.out.print("Enter the shift value: ");
-        int shift = sc.nextInt();
+        System.out.print("Enter shift value: ");
+        int k = scanner.nextInt();
 
-        String encryptedText = encrypt(text, shift);
+        // Encryption
+        String encryptedText = encrypt(text, k);
         System.out.println("Encrypted Text: " + encryptedText);
-
-        String decryptedText = decrypt(encryptedText, shift);
+        // Decryption
+        String decryptedText = decrypt(encryptedText, k);
         System.out.println("Decrypted Text: " + decryptedText);
-
-        sc.close();
-
+        scanner.close();
     }
 }
