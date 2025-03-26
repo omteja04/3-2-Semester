@@ -23,7 +23,7 @@ char convert(int item) {
 int main() {
     char input[MAX];
     int ip[MAX], i = 0, j, a, b, t;
-
+    printf("CFG for Predictive Parser:\nE -> E+T | T\nT -> T*F | F\nF -> (E) | i\n");
     printf("Enter input string ending with '$': ");
     scanf("%s", input);
 
