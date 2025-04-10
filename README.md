@@ -19,4 +19,4 @@
 1. [Machine Learning using Python Lab](https://github.com/omteja04/3-2-Semester/tree/master/MLP-Lab)
 2. [Compiler Design Lab](https://github.com/omteja04/3-2-Semester/tree/master/CD-Lab)
 3. [Cryptography and Network Security Lab](https://github.com/omteja04/3-2-Semester/tree/master/CNS-Lab)
-4. [Mean Stack Development](https://github.com/omteja04/3-2-Semester/tree/master/MeanSt)
+4. [Mean Stack Development](https://github.com/omteja04/3-2-Semester/tree/master/MST-Lab)
