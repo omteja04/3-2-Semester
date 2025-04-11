@@ -64,10 +64,6 @@
 
 ## Discuss about IEEE 802.11 architecture and services
 
-Sure! Here's a concise yet comprehensive explanation of **IEEE 802.11 architecture and services**, which is the standard for **wireless local area networks (WLANs)**, commonly known as Wi-Fi.
-
----
-
 ### IEEE 802.11 Architecture
 
 ![Architecture](https://image2.slideserve.com/4048758/slide7-l.jpg)
