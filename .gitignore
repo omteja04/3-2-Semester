@@ -1,6 +1,8 @@
 
 # Ignore PDF files in top-level and subdirectories
-*.pdf
+*QB*.pdf
+EDA.pdf
+MLObservation.pdf
 
 # Ignore images directories at second-level
 /*/*/images
