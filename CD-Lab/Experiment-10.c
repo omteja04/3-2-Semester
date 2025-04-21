@@ -1,62 +1,72 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-char stack[100], input[100];
-int top = -1, ip = 0;
-
-void printStatus(const char *action) {
-    printf("$");
-    for(int i = 0; i <= top; i++) {
-        printf("%c", stack[i]);
-    }
-    printf("\t\t");
-    for(int i = ip; input[i] != '\0'; i++) {
-        printf("%c", input[i]);
-    }
-    printf("$\t\t%s\n", action);
-}
+char input[20], stack[20];
+int ip_ptr = 0, st_ptr = 0, len;
 
 void reduce() {
-    while(1) {
-        // E -> a / b
-        if(top >= 0 && (stack[top] == 'a' || stack[top] == 'b')) {
-            stack[top] = 'E';
-            printStatus("REDUCE TO E -> a/b");
+    int reduced;
+
+    do {
+        reduced = 0;
+
+        // Rule: E -> a or E -> b
+        if(st_ptr >= 1 && (stack[st_ptr - 1] == 'a' || stack[st_ptr - 1] == 'b')) {
+            char term = stack[st_ptr - 1];
+            stack[st_ptr - 1] = 'E';
+            printf("\n$%.*s\t\t%s$\t\t\tE -> %c", st_ptr, stack, input + ip_ptr, term);
+            reduced = 1;
         }
-        // E -> E op E
-        else if(top >= 2 && stack[top - 2] == 'E' &&
-                (stack[top - 1] == '+' || stack[top - 1] == '*' || stack[top - 1] == '/') &&
-                stack[top] == 'E') {
-            stack[top - 2] = 'E';
-            top -= 2;
-            printStatus("REDUCE TO E -> E op E");
-        } else {
-            break;
+
+        // Rule: E -> E + E / E * E / E / E
+        else if(st_ptr >= 3 &&
+                stack[st_ptr - 3] == 'E' &&
+                (stack[st_ptr - 2] == '+' || stack[st_ptr - 2] == '*' || stack[st_ptr - 2] == '/') &&
+                stack[st_ptr - 1] == 'E') {
+
+            char op = stack[st_ptr - 2];
+            stack[st_ptr - 3] = 'E';
+            st_ptr -= 2;
+            stack[st_ptr] = '\0';
+
+            printf("\n$%.*s\t\t%s$\t\t\tE -> E%cE", st_ptr, stack, input + ip_ptr, op);
+            reduced = 1;
         }
+
+    } while(reduced);
+
+    // Accept condition
+    if(stack[0] == 'E' && st_ptr == 1 && ip_ptr == len) {
+        printf("\n$%.*s\t\t%s$\t\t\tAccept", st_ptr, stack, input + ip_ptr);
+        exit(0);
     }
 }
 
 int main() {
+    printf("\n\tShift Reduce Parser\n");
     printf("Grammar:\nE -> E + E\nE -> E * E\nE -> E / E\nE -> a | b\n");
-    printf("Enter the input string: ");
+
+    printf("\nEnter the input string: ");
     scanf("%s", input);
+    len = strlen(input);
 
-    printf("\nInput String: %s\n", input);
-    printf("\nStack\t\tInput\t\tAction\n");
-    printf("$\t\t%s$\t\tInitial\n", input);
+    printf("\n\tStack\t\tInput\t\tAction");
+    printf("\n\t$\t\t%s$\t\t--", input);
 
-    while(input[ip] != '\0') {
-        stack[++top] = input[ip++];
-        printStatus("SHIFT");
+    while(ip_ptr < len) {
+        char symbol = input[ip_ptr++];
+        stack[st_ptr++] = symbol;
+        stack[st_ptr] = '\0';
+
+        printf("\n$%s\t\t%s$\t\t\tshift %c", stack, input + ip_ptr, symbol);
+
         reduce();
     }
 
-    reduce();  // Final reduce
+    reduce();  // Final check after input consumed
 
-    if(top == 0 && stack[0] == 'E') {
-        printStatus("Accept");
-    } else {
-        printStatus("Reject");
-    }
-
+    // Reject if not accepted yet
+    printf("\n$%s\t\t%s$\t\t\tReject", stack, input + ip_ptr);
     return 0;
 }
