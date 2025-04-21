@@ -19,7 +19,7 @@ void reduce() {
             reduced = 1;
         }
 
-        // Rule: E -> E + E / E * E / E / E
+        // Rule: E -> E + E or E * E or E / E
         else if(st_ptr >= 3 &&
                 stack[st_ptr - 3] == 'E' &&
                 (stack[st_ptr - 2] == '+' || stack[st_ptr - 2] == '*' || stack[st_ptr - 2] == '/') &&
