@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Diffie-Hellman Key Exchange</title>
+</head>
+
+<body>
+    <h2>Diffie-Hellman Key Exchange</h2>
+    <p>Prime Number (p): <span id="prime"></span></p>
+    <p>Primitive Root (g): <span id="root"></span></p>
+
+    <label for="alicePrivate">Alice's Private Key (a):</label>
+    <input type="number" id="alicePrivate" min="1">
+    <button onclick="ComputeDH()">Compute</button>
+
+    <h3>Results</h3>
+    <p>Alice's Public Key (A): <span id="alicePublic"></span></p>
+    <p>Bob's Public Key (B): <span id="bobPublic"></span></p>
+    <p>Shared Secret Key: <span id="sharedKey"></span></p>
+
+    <script>
+        const p = 23;
+        const g = 5;
+        document.getElementById("prime").textContent = p;
+        document.getElementById("root").textContent = g;
+        const bobPrivate = Math.floor(Math.random() * (p - 2)) + 1;
+        function modExp(base, exp, mod) {
+            let result = 1;
+            while (exp > 0) {
+                if (exp % 2 === 1) {
+                    result = (result * base) % mod;
+                }
+                base = (base * base) % mod;
+                exp = Math.floor(exp / 2);
+            }
+            return result;
+        }
+        function ComputeDH() {
+            const alicePrivate = parseInt(document.getElementById("alicePrivate").value);
+            if (isNaN(alicePrivate) || alicePrivate < 1 || alicePrivate >= p) {
+                alert("Invalid private key. Choose a number between 1 and " + (p - 1));
+                return;
+            }
+            const alicePublic = modExp(g, alicePrivate, p);
+            const bobPublic = modExp(g, bobPrivate, p);
+            const sharedSecret = modExp(bobPublic, alicePrivate, p);
+            document.getElementById("alicePublic").textContent = alicePublic;
+            document.getElementById("bobPublic").textContent = bobPublic;
+            document.getElementById("sharedKey").textContent = sharedSecret;
+        }
+    </script>
+</body>
+
+</html>

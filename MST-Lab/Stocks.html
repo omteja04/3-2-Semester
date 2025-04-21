@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Stock Price Simulation</title>
+</head>
+
+<body>
+    <script>
+        function getRandomStockPrice() {
+            return (Math.random() * 1000).toFixed(2);
+        }
+        function simulateStockPrice() {
+            return new Promise((resolve) => {
+                let count = 0;
+                let interval = setInterval(() => {
+                    let price = getRandomStockPrice();
+                    console.log(`Stock Price ${count + 1}: Rs. ${price}`);
+                    document.write(`Stock Price ${count + 1}: Rs. ${price}<br>`);
+                    count++;
+                    if (count === 5) {
+                        clearInterval(interval);
+                        resolve("Simulation Complete");
+                    }
+                }, 3000);
+            });
+        }
+        simulateStockPrice().then((message) => {
+            console.log(message);
+            document.write(`<b>${message}</b>`);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<form #userForm="ngForm" ngSubmit="onSubmit(userForm)">
+    <div>
+        <label for="username">username:</label>
+        <input type="text" id="username" name="username" ngModel appUsernamePattern required />
+        <div #ngIf="userForm.submitted && userForm.control.username?.errors?.invalidUsername">
+            username Must be letters and numbers only and between 5 to 15 length
+        </div>
+    </div>
+    <button type="submit">Submit</button>
+</form>
