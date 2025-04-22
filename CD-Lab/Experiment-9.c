@@ -1,3 +1,7 @@
+// LR Parsing Algorithm
+// LR parsing is a bottom-up parser that reads input Left to right and produces a Rightmost derivation in reverse.
+// It uses a stack and parsing table to shift input symbols and reduce them to grammar rules.
+
 #include <stdio.h>
 #include <string.h>
 

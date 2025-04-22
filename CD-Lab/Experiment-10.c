@@ -1,3 +1,6 @@
+// Shift Reduce Parser using Stack
+// A shift-reduce parser uses a stack-based approach to parse input by shifting symbols and reducing when grammar rules match.
+// It continues until the stack contains only the start symbol and the input is fully consumed.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
