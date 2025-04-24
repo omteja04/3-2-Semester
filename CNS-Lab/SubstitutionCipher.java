@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class SubstitutionCipher {
+public class SubstitutionCipher {
 
     public static String encrypt(String text, String a, String b) {
         StringBuilder result = new StringBuilder();

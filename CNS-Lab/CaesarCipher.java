@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class CaesarCipher {
+public class CaesarCipher {
     // Helper method to shift a character
     private static char shiftChar(char c, int k) {
         if (Character.isUpperCase(c)) {

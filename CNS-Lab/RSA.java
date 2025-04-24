@@ -1,7 +1,7 @@
 import java.math.BigInteger;
 import java.util.Scanner;
 
-class RSA {
+public class RSA {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

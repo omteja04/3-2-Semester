@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class HillCipher {
+public class HillCipher {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
