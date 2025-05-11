@@ -285,69 +285,69 @@ markmap:
 
 ## Features
 
-### Event-Driven Architecture
+**Event-Driven Architecture**
 
 - Uses event loops for handling multiple requests
 - Non-blocking I/O model
 - High concurrency & throughput
 
-### Non-Blocking I/O
+**Non-Blocking I/O**
 
 - Performs I/O operations asynchronously
 - Improves performance and reduces latency
 
-### Single-Threaded
+**Single-Threaded**
 
 - Single-threaded event loop
 - Handles many connections concurrently
 - Lightweight and efficient
 
-### JavaScript Runtime
+**JavaScript Runtime**
 
 - JavaScript for both front-end and back-end
 - Enables unified development
 
-### Cross-Platform
+**Cross-Platform**
 
 - Works on Windows, macOS, Linux
 - Write once, run anywhere
 
-### Fast Execution (V8 Engine)
+**Fast Execution (V8 Engine)**
 
 - Uses Chrome's V8 engine
 - Compiles JS to machine code
 
-### Scalability
+**Scalability**
 
 - Horizontal scalability via clustering
 - Utilizes multi-core systems
 
-### Built-in Modules
+**Built-in Modules**
 
 - HTTP, File System, Streams, Buffers, Events, etc.
 - Reduces boilerplate code
 
-### NPM (Node Package Manager)
+**NPM (Node Package Manager)**
 
 - World's largest open-source ecosystem
 - Easy package management and sharing
 
-### Real-Time Capabilities
+**Real-Time Capabilities**
 
 - Great for chat apps and notifications
 - WebSockets for bi-directional communication
 
-### JSON Handling
+**JSON Handling**
 
 - Native support for JSON
 - Ideal for RESTful APIs and MongoDB
 
-### Server-Side JavaScript
+**Server-Side JavaScript**
 
 - Enables full-stack JavaScript
 - Consistency across frontend and backend
 
-### Stream-Based I/O
+**Stream-Based I/O**
 
 - Efficient handling of large data
 - Ideal for video streaming, real-time processing
@@ -356,65 +356,65 @@ markmap:
 
 ## Applications
 
-### Web Servers and Applications
+**Web Servers and Applications**
 
 - Build RESTful APIs with Express.js
 - Efficient HTTP handling
 
-### Real-Time Applications
+**Real-Time Applications**
 
 - Messaging apps, live chats
 - WebSockets, Socket.io
 
-### APIs and Microservices
+**APIs and Microservices**
 
 - REST & GraphQL
 - Lightweight and fast
 
-### Single-Page Applications (SPAs)
+**Single-Page Applications (SPAs)**
 
 - Use with React or Vue
 - Aligns with non-blocking I/O
 
-### Real-Time Analytics
+**Real-Time Analytics**
 
 - Collect, process, visualize data in real time
 
-### Streaming Applications
+**Streaming Applications**
 
 - Video/audio streaming using streams
 
-### IoT (Internet of Things)
+**IoT (Internet of Things)**
 
 - Manages real-time device data
 - Scales with large device networks
 
-### E-Commerce Platforms
+**E-Commerce Platforms**
 
 - Real-time user handling
 - Integrates payment gateways
 
-### Chatbots and Social Media
+**Chatbots and Social Media**
 
 - Real-time messaging and updates
 
-### Command-Line Tools
+**Command-Line Tools**
 
 - Build developer tools (e.g., Commander.js)
 
-### Server-Side Rendering (SSR)
+**Server-Side Rendering (SSR)**
 
 - SEO-friendly rendering with Next.js, Nuxt.js
 
-### Automation and Scripting
+**Automation and Scripting**
 
 - Task automation (deployment, CI, testing)
 
-### Blockchain Development
+**Blockchain Development**
 
 - DApps, smart contracts, real-time transactions
 
-### Cross-Platform Desktop Apps
+**Cross-Platform Desktop Apps**
 
 - Built using Electron.js
 
@@ -430,19 +430,19 @@ Express.js is a minimal, fast, and flexible web application framework for Node.j
 
 ## Key Features of Express.js
 
-### Minimal and Lightweight
+**Minimal and Lightweight**
 
 - Unopinionated and flexible
 - No strict folder structure or patterns
 - Developers can structure apps as needed
 
-### Middleware Support
+**Middleware Support**
 
 - Access to request and response objects
 - Can modify, end, or pass control
 - Common use cases: authentication, logging, error handling, CORS
 
-### Routing
+**Routing**
 
 - Built-in mechanism for handling HTTP methods
 - Supports route parameters, query strings, nested routes
@@ -453,7 +453,7 @@ Express.js is a minimal, fast, and flexible web application framework for Node.j
   });
   ```
 
-### Template Engine Integration
+**Template Engine Integration**
 
 - Works with Pug, EJS, Handlebars, etc.
 - Generates dynamic HTML content
@@ -462,34 +462,34 @@ Express.js is a minimal, fast, and flexible web application framework for Node.j
   app.set("view engine", "ejs");
   ```
 
-### REST API Support
+**REST API Support**
 
 - Ideal for RESTful APIs
 - Clean endpoints and middleware chains
 
-### Debugging
+**Debugging**
 
 - Detailed stack traces and error messages
 - Useful for development and testing
 
-### Scalability
+**Scalability**
 
 - Lightweight and modular architecture
 - Scales vertically and horizontally
 - Compatible with PM2, Docker, NGINX
 
-### Asynchronous and Non-blocking
+**Asynchronous and Non-blocking**
 
 - Built on Node.js async nature
 - Handles multiple requests efficiently
 - Supports Promises and async/await
 
-### Third-Party Middleware
+**Third-Party Middleware**
 
 - Thousands of npm packages available
 - Examples: morgan, cors, helmet, body-parser
 
-### Error Handling
+**Error Handling**
 
 - Centralized error-handling middleware
 
@@ -503,17 +503,17 @@ Express.js is a minimal, fast, and flexible web application framework for Node.j
 
 ## Applications of Express.js
 
-### RESTful API Development
+**RESTful API Development**
 
 - Backend for mobile and web apps
 - Routes for products, cart, orders, etc.
 
-### Single-Page Applications (SPA) Backend
+**Single-Page Applications (SPA) Backend**
 
 - Acts as API server
 - Can serve front-end build files
 
-### Real-Time Applications
+**Real-Time Applications**
 
 - With Socket.io for:
 
@@ -521,37 +521,37 @@ Express.js is a minimal, fast, and flexible web application framework for Node.j
   - Online games
   - Live dashboards
 
-### E-Commerce Platforms
+**E-Commerce Platforms**
 
 - Authentication, product listings, cart, payments
 
-### Social Media Applications
+**Social Media Applications**
 
 - User profiles, posts, likes, comments, messaging
 
-### Authentication Systems
+**Authentication Systems**
 
 - Secure login with JWT, OAuth, Passport.js
 
-### Microservices Architecture
+**Microservices Architecture**
 
 - Lightweight and container-friendly
 - Ideal for Docker-based services
 
-### IoT Backend
+**IoT Backend**
 
 - REST server for device data, triggers, and updates
 
-### Server-Side Rendering (SSR)
+**Server-Side Rendering (SSR)**
 
 - With template engines or frameworks like Next.js
 
-### Blog or CMS Backends
+**Blog or CMS Backends**
 
 - Custom CMS/blog engines
 - Admin dashboard for content management
 
-### Streaming and File Upload Applications
+**Streaming and File Upload Applications**
 
 - Handle uploads and streaming with multer and streams
 
@@ -674,132 +674,132 @@ MongoDB is a flexible, document-oriented NoSQL database that stores data in BSON
 
 ## Features
 
-### Document-Oriented Storage
+**Document-Oriented Storage**
 
 - NoSQL database
 - Stores data in BSON (Binary JSON)
 - Flexible schema
 
-### Scalability
+**Scalability**
 
 - Horizontal scaling with Sharding
 - Distributes data across multiple servers
 
-### High Availability
+**High Availability**
 
 - Replica Sets for data replication
 - Automatic failover for high availability
 
-### Flexible Schema
+**Flexible Schema**
 
 - Schema-less structure
 - Adaptable to evolving data models
 
-### Indexing
+**Indexing**
 
 - Single field, compound, geospatial, text, and hashed indexes
 - Improves query performance
 
-### Aggregation Framework
+**Aggregation Framework**
 
 - Complex data transformation and analysis
 - Operators: `$group`, `$match`, `$sort`, `$project`, `$limit`
 
-### Rich Query Language
+**Rich Query Language**
 
 - Logical, comparison, and element operators
 - Regular expressions and full-text search
 
-### Data Replication
+**Data Replication**
 
 - Replica Sets for automatic failover and data replication
 
-### Aggregation Pipeline
+**Aggregation Pipeline**
 
 - Data transformation in stages
 - More flexibility than SQL’s `GROUP BY`, `JOIN`
 
-### GridFS
+**GridFS**
 
 - Stores files > 16MB
 - Splits large files into chunks
 
-### Transactions
+**Transactions**
 
 - Multi-document ACID transactions (from version 4.0)
 
-### Change Streams
+**Change Streams**
 
 - Real-time data changes for event-driven apps
 
-### Security
+**Security**
 
 - Authentication, authorization, encryption, and auditing
 - Role-based access control (RBAC)
 
-### MapReduce
+**MapReduce**
 
 - Alternative to Aggregation for large-scale data processing
 
 ## Applications
 
-### Content Management Systems (CMS)
+**Content Management Systems (CMS)**
 
 - Flexible storage for articles, media, and user comments
 
-### Real-Time Analytics
+**Real-Time Analytics**
 
 - Supports aggregation and change streams for instant insights
 
-### IoT Applications
+**IoT Applications**
 
 - Handles high-volume, time-series data from IoT devices
 
-### E-Commerce Platforms
+**E-Commerce Platforms**
 
 - Manages product data, orders, and user profiles
 
-### Mobile Applications
+**Mobile Applications**
 
 - Backend for mobile apps with flexible data sync
 
-### Social Media Platforms
+**Social Media Platforms**
 
 - Stores complex models for users, posts, comments, and media
 
-### Gaming Applications
+**Gaming Applications**
 
 - Stores user profiles, game state, and session data
 
-### Product Catalogs
+**Product Catalogs**
 
 - Flexible storage for diverse product data
 
-### Personalization Engines
+**Personalization Engines**
 
 - Recommends products based on user behavior
 
-### Financial Services
+**Financial Services**
 
 - Manages transactions, user profiles, and trading data
 
-### Healthcare Applications
+**Healthcare Applications**
 
 - Stores patient records, medical images, and sensor data
 
-### Log Management
+**Log Management**
 
 - Stores and analyzes large log datasets
 
-### Event Sourcing and Event-Driven Architecture
+**Event Sourcing and Event-Driven Architecture**
 
 - Captures application state changes as events
 
-### Metadata Management
+**Metadata Management**
 
 - Stores metadata for document/image management
 
-### Data Warehousing
+**Data Warehousing**
 
 - Handles historical data and supports complex analytics
 
