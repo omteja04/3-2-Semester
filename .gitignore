@@ -9,3 +9,5 @@ MLObservation.pdf
 *.class
 .clang-format
 *.pdf
+node_modules
+/MSD/Sem

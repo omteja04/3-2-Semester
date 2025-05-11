@@ -9,7 +9,7 @@ markmap:
 
 # HTML5 Features and Applications
 
-## What is HTML
+## What is HTML?
 
 - HTML (HyperText Markup Language) is the standard language used to create and structure webpages with elements like headings, paragraphs, and links. It serves as the foundation for web development, with other technologies like CSS and JavaScript enhancing its design and functionality.
 
@@ -424,7 +424,7 @@ markmap:
 
 ## What is Express.js?
 
-Express.js is a minimal, fast, and flexible web application framework for Node.js, designed to build single-page, multi-page, and hybrid web applications. It's often called the "de facto standard" for building web servers using Node.js.
+- Express.js is a minimal, fast, and flexible web application framework for Node.js, designed to build single-page, multi-page, and hybrid web applications. It's often called the "de facto standard" for building web servers using Node.js.
 
 ---
 
@@ -556,7 +556,7 @@ Express.js is a minimal, fast, and flexible web application framework for Node.j
 
 # TypeScript Features & Applications
 
-## What is TypeScript ?
+## What is TypeScript?
 
 - TypeScript is a superset of JavaScript that adds static typing, interfaces, and advanced features to JavaScript, enabling better tooling, early error detection, and improved code quality. It compiles down to plain JavaScript, ensuring compatibility with all browsers and environments.
 
@@ -665,9 +665,9 @@ Express.js is a minimal, fast, and flexible web application framework for Node.j
 
 # MongoDB Features & Applications
 
-## What is MongoDB ?
+## What is MongoDB?
 
-MongoDB is a flexible, document-oriented NoSQL database that stores data in BSON (Binary JSON) format. It offers scalability, high availability, and powerful query capabilities, making it ideal for modern, large-scale applications.
+- MongoDB is a flexible, document-oriented NoSQL database that stores data in BSON (Binary JSON) format. It offers scalability, high availability, and powerful query capabilities, making it ideal for modern, large-scale applications.
 
 ## Features
 
@@ -802,7 +802,7 @@ MongoDB is a flexible, document-oriented NoSQL database that stores data in BSON
 
 # Angular Features & Applications
 
-## What is Angular ?
+## What is Angular?
 
 - Angular is a powerful, open-source front-end framework developed by Google for building dynamic, scalable web applications. It follows a component-based architecture and provides a rich set of tools and features for building modern web apps.
 
@@ -899,3 +899,9 @@ MongoDB is a flexible, document-oriented NoSQL database that stores data in BSON
 
 - **Financial and Banking Applications**
   - Angular is used in building complex applications for the financial sector, where security, real-time data processing, and performance are critical.
+
+
+# Connect
+
+- [![GitHub](https://img.shields.io/badge/GitHub-omteja04-181717?logo=github)](https://github.com/omteja04)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-omteja-0000FF?logo=linkedin)](https://linkedin.com/in/omteja)
