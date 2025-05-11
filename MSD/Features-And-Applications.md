@@ -484,17 +484,17 @@ markmap:
 
 - **Third-Party Middleware**
 
-- Thousands of npm packages available
-- Examples: morgan, cors, helmet, body-parser
+  - Thousands of npm packages available
+  - Examples: morgan, cors, helmet, body-parser
 
 - **Error Handling**
 
-- Centralized error-handling middleware
-- ```js
-  app.use((err, req, res, next) => {
-    res.status(500).send("Something broke!");
-  });
-  ```
+  - Centralized error-handling middleware
+  - ```js
+    app.use((err, req, res, next) => {
+      res.status(500).send("Something broke!");
+    });
+    ```
 
 ---
 
@@ -673,9 +673,9 @@ markmap:
 
 - **Document-Oriented Storage**
 
-    - NoSQL database
-    - Stores data in BSON (Binary JSON)
-    - Flexible schema
+  - NoSQL database
+  - Stores data in BSON (Binary JSON)
+  - Flexible schema
 
 - **Scalability**
 
@@ -689,13 +689,13 @@ markmap:
 
 - **Flexible Schema**
 
-    - Schema-less structure
-    - Adaptable to evolving data models
+  - Schema-less structure
+  - Adaptable to evolving data models
 
 - **Indexing**
 
-    - Single field, compound, geospatial, text, and hashed indexes
-    - Improves query performance
+  - Single field, compound, geospatial, text, and hashed indexes
+  - Improves query performance
 
 - **Aggregation Framework**
 
@@ -704,8 +704,8 @@ markmap:
 
 - **Rich Query Language**
 
-    - Logical, comparison, and element operators
-    - Regular expressions and full-text search
+  - Logical, comparison, and element operators
+  - Regular expressions and full-text search
 
 - **Data Replication**
 
@@ -723,7 +723,7 @@ markmap:
 
 - **Transactions**
 
-    - Multi-document ACID transactions (from version 4.0)
+  - Multi-document ACID transactions (from version 4.0)
 
 - **Change Streams**
 
@@ -766,7 +766,7 @@ markmap:
 
 - **Gaming Applications**
 
-    - Stores user profiles, game state, and session data
+  - Stores user profiles, game state, and session data
 
 - **Product Catalogs**
 
@@ -774,7 +774,7 @@ markmap:
 
 - **Personalization Engines**
 
-    - Recommends products based on user behavior
+  - Recommends products based on user behavior
 
 - **Financial Services**
 
@@ -782,7 +782,7 @@ markmap:
 
 - **Healthcare Applications**
 
-    - Stores patient records, medical images, and sensor data
+  - Stores patient records, medical images, and sensor data
 
 - **Log Management**
 
@@ -798,7 +798,7 @@ markmap:
 
 - **Data Warehousing**
 
-    - Handles historical data and supports complex analytics
+  - Handles historical data and supports complex analytics
 
 # Angular Features & Applications
 
@@ -899,7 +899,6 @@ markmap:
 
 - **Financial and Banking Applications**
   - Angular is used in building complex applications for the financial sector, where security, real-time data processing, and performance are critical.
-
 
 # Connect
 
