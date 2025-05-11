@@ -11,21 +11,76 @@ markmap:
 
 ## Introduction to Web
 
-- The web is a system of interlinked hypertext documents and multimedia content that is accessible over the internet.
-- **Web Technologies**:
-  - HTML (Hypertext Markup Language)
-  - CSS (Cascading Style Sheets)
-  - JavaScript (for interactivity)
-  - Server-Side Technologies (PHP, Node.js, etc.)
+- The World Wide Web (WWW) is a system of interlinked hypertext documents and multimedia content accessed via the Internet.
+- Enables users to view websites, click links, and interact with web applications.
+- Basic Components of the Web
+  - **Browser**: Software to view web content (e.g., Chrome, Firefox, Edge)
+  - **URL (Uniform Resource Locator)**: Address used to access resources (e.g., https://example.com)
+  - **HTTP/HTTPS**: Protocols for data transfer between client and server
+  - **Web Server**: Stores and serves website content (e.g., Apache, Nginx)
+  - **Web Page**: Document written in HTML, viewed in a browser
+  - **Web Application**: Dynamic, interactive website with client-server architecture
 
 ## Overview of Web Technologies
 
-- **HTML**: Structure of the web page.
-- **CSS**: Presentation and design of the web page.
-- **JavaScript**: Interaction and dynamic content on the web page.
-- **Backend**: Server-side processing (e.g., Node.js, Python).
-- **Databases**: Store data (e.g., MySQL, MongoDB).
-- **Web Servers**: Serve the content (e.g., Apache, Nginx).
+### Front-End Technologies (Client-Side)
+
+- Technologies the user sees and interacts with in the browser
+  - **HTML**: Structure/content of web pages
+  - **CSS**: Styles and layouts (colors, fonts, spacing)
+  - **JavaScript**: Interactivity (animations, dynamic data, forms)
+  - **Frameworks/Libraries**: React, Angular, Vue.js (for building complex UIs)
+  - **Responsive Design**: Techniques (media queries, flexbox) for device adaptation
+
+### Back-End Technologies (Server-Side)
+
+- Handle business logic, database operations, server communication
+  - **Languages**: Java, Python, PHP, Ruby, Node.js
+  - **Web Frameworks**: Express (Node.js), Django (Python), Laravel (PHP)
+  - **Database**: Store/retrieve data (MySQL, MongoDB, PostgreSQL)
+  - **Authentication**: Secure user access (login/logout/session/cookies)
+
+### Database Technologies
+
+- Store user information, content, application data
+  - **Relational DB**: MySQL, PostgreSQL (SQL, structured schemas)
+  - **NoSQL DB**: MongoDB, Firebase (JSON-like, flexible documents)
+
+### Web Servers
+
+- Serve static/dynamic content to clients
+  - **Apache**: Most common open-source server
+  - **Nginx**: Efficient, high-performance server
+  - **Node.js**: Server environment for backend JavaScript
+
+### Protocols
+
+- Rules for data transmission
+  - **HTTP/HTTPS**: Transfers data (HTTPS is secure)
+  - **FTP**: Transfers files
+  - **TCP/IP**: Foundational internet protocol
+
+### APIs (Application Programming Interfaces)
+
+- Enable communication between client and server
+  - Example: Weather website fetching data from a weather API
+  - Uses JSON/XML for data exchange
+
+### Web Development Tools
+
+- **VS Code**: Popular code editor
+- **Git & GitHub**: Version control and collaboration
+- **Browser DevTools**: Inspect/debug HTML, CSS, JS
+- **Postman**: Test APIs
+- **Package Managers**: npm/yarn for dependencies
+
+### Deployment and Hosting
+
+- Platforms for deploying web apps:
+  - GitHub Pages (static sites)
+  - Netlify, Vercel
+  - Heroku, Firebase
+  - AWS, Azure, GCP (cloud platforms)
 
 ## HTML - Introduction
 
@@ -61,52 +116,101 @@ markmap:
 
 - It tells the browser to use the latest HTML5 standards.
 
-## Types of HTML Elements
+## Types of Elements in HTML
 
-- **Structural Elements**:
+### Block-level Elements
 
-  - `<html>`, `<head>`, `<body>`, `<header>`, `<footer>`, etc.
+- Start on a new line, take full width
+- Used for: sections, paragraphs, headers
+- Examples: `div`, `p`, `h1`–`h6`, `section`, `article`, `header`, `footer`, `nav`, `ul`, `ol`, `li`, `table`, `form`
 
-- **Content Elements**:
+### Inline Elements
 
-  - `<p>`, `<h1>`-`<h6>`, `<ul>`, `<ol>`, `<li>`, `<a>`, `<img>`, etc.
+- Do not start on a new line, only take needed width
+- Used for: styling, formatting within blocks
+- Examples: `span`, `a`, `strong`, `em`, `img`, `label`, `input`, `abbr`, `code`
 
-## HTML Elements - Attributes
+### Empty (Void) Elements
 
-- HTML elements can have attributes that define additional properties.
-- Example:
+- No closing tag, cannot contain content
+- Used for: line breaks, images, input fields
+- Examples: `br`, `hr`, `img`, `input`, `link`, `meta`, `source`, `embed`
 
-  ```html
-  <a href="https://www.example.com">Visit Example</a>
-  ```
+### Semantic vs Non-Semantic Elements
 
-  - `href` is an attribute of the `<a>` element.
+- **Semantic:** Clearly describe their purpose
+  - Examples: `header`, `footer`, `article`, `nav`, `aside`, `main`
+- **Non-Semantic:** Do not convey meaning
+  - Examples: `div`, `span`
 
-## Metadata Element
+---
 
-- **Purpose**: Provides information about the document, like author, keywords, or character encoding.
-- Example:
+## HTML Attributes
 
-  ```html
-  <meta charset="UTF-8" /> <meta name="author" content="John Doe" />
-  ```
+### What are Attributes?
+
+- Extra info in tags to define properties/behavior
+- Format: `name="value"` in the opening tag
+
+### Common Attributes
+
+- `id`, `class`, `src`, `alt`, `href`, `title`, `style`, `target`, `disabled`
+
+### Boolean Attributes
+
+- Presence means true (no value needed)
+- Examples: `checked`, `disabled`, `readonly`
+
+### Rules
+
+- Values in quotes
+- Names case-insensitive (lowercase recommended)
+- Some are global, some tag-specific
+
+---
+
+## HTML Metadata Elements
+
+### What is Metadata?
+
+- Data about the webpage, not shown on page
+- Placed in `<head>`
+
+### Common Metadata Elements
+
+- `title`: Page title (browser tab, SEO)
+- `meta`: Charset, description, author, viewport
+- `link`: Attach external files (CSS)
+- `style`: Internal CSS
+- `script`: JS files or code
+- `base`: Base URL for relative links
+
+---
 
 ## Sectioning Elements
 
-- Sectioning elements help organize content on the page.
+### Purpose
 
-  - Example: `<section>`, `<article>`, `<nav>`, `<aside>`, `<header>`, `<footer>`.
+- Structure webpage into logical, accessible sections
+- Placed in `<body>`
 
-- **Purpose**: Improves accessibility and SEO.
+### Key Sectioning Elements
 
-  - Example:
+- `header`: Intro section (logo, nav)
+- `footer`: Page/section footer (copyright, contact)
+- `nav`: Navigation links
+- `section`: Thematic group of content
+- `article`: Self-contained content (blog post, news)
+- `aside`: Tangential content (sidebars, quotes)
+- `main`: Main content (excludes header/footer/aside)
+- `h1`–`h6`: Headings (importance order)
 
-    ```html
-    <section>
-      <h1>Introduction</h1>
-      <p>Welcome to the world of HTML.</p>
-    </section>
-    ```
+### Benefits
+
+- Improved accessibility
+- SEO benefits
+- Maintainable code
+- Responsive design support
 
 ## Paragraph Element
 
