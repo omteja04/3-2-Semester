@@ -15,7 +15,7 @@
 | [Angular](./Angular)                                                         | [Angular](https://github.com/omteja04/3-2-Semester/blob/master/MSD/Angular.md)       | [Angular](./Angular.html)       |
 
 [Features & Applications Markdown](https://github.com/omteja04/3-2-Semester/blob/master/MSD/Features-And-Applications.md)
-[Features & Applications Mind Map](./Features-And-Applications.md)
+[Features & Applications Mind Map](./Features-And-Applications.html)
 
 <br>
 <span align='center'>
