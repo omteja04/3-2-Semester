@@ -14,6 +14,9 @@
 | [MongoDB](./MongoDB)                                                         | [MongoDB](https://github.com/omteja04/3-2-Semester/blob/master/MSD/MongoDB.md)       | [MongoDB](./MongoDB.html)       |
 | [Angular](./Angular)                                                         | [Angular](https://github.com/omteja04/3-2-Semester/blob/master/MSD/Angular.md)       | [Angular](./Angular.html)       |
 
+[Features & Applications Markdown](https://github.com/omteja04/3-2-Semester/blob/master/MSD/Features-And-Applications.md)
+[Features & Applications Mind Map](./Features-And-Applications.md)
+
 <br>
 <span align='center'>
   <a href='https://github.com/omteja04' target='_blank'>
