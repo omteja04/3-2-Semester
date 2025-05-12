@@ -2,7 +2,7 @@
 markmap:
   colorFreezeLevel: 0
   maxWidth: 400
-  initialExpandLevel: 3
+  initialExpandLevel: -1
   pan: true
   zoom: true
 ---
