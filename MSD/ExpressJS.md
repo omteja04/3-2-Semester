@@ -13,12 +13,13 @@ markmap:
 
 - **Express.js**: A fast and minimal web framework for Node.js to build scalable and efficient web applications.
 - **Installation**:
+
   ```bash
   npm initialize -y            # Initialize a Node.js project with default settings
   npm install express          # Install Express.js in the project
   ```
 
-* **Basic Setup**:
+- **Basic Setup**:
 
   ```javascript
   const express = require("express");
@@ -33,7 +34,7 @@ markmap:
   });
   ```
 
-* **Testing**: Run the server with the command `node app.js` and open your web browser to `http://localhost:3000/` to check if the server is working.
+- **Testing**: Run the server with the command `node app.js` and open your web browser to `http://localhost:3000/` to check if the server is working.
 
 ---
 
